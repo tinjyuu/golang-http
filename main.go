@@ -6,10 +6,10 @@ import (
 	"net/http"
 )
 
-func handler(w http.ResponseWriter, r *http.Request) {
-	title := "Jenkins X golang http example"
+func handler(w http.ResponseWriter, r * http.Request) {
+	title: = "Jenkins X golang http example PR-1"
 
-	from := ""
+	from: = ""
 	if r.URL != nil {
 		from = r.URL.String()
 	}
@@ -17,7 +17,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 		log.Printf("title: %s\n", title)
 	}
 
-	fmt.Fprintf(w, "Hello from:  "+title+"\n")
+	fmt.Fprintf(w, "Hello from:  " + title + "\n")
 }
 
 func main() {
